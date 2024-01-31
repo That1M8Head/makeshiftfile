@@ -2,12 +2,12 @@
 setlocal enabledelayedexpansion
 
 REM Makeshiftfile - A Makefile, but it's makeshift (Windows Edition)
+REM Copyright (c) Arsalan "Velocity" Kazmi <https://that1m8head.github.io>
 REM This Batch script compiles every source file in the CWD and runs them one at a time.
-REM Bash script coming soon.
 
 REM == Configuration
 set compiler=g++
-set compile_flags=-O3 -Wall
+set compile_flags=-O3 -Wall -static-libgcc
 set execute_cmd=call
 set file_type=cpp
 set require_confirmation=1
